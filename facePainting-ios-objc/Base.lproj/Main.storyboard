@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HMn-I2-vST">
+                                <rect key="frame" x="16" y="67" width="32" height="328"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhs-EN-EmN" userLabel="WhiteBrush">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="RKx-N8-Dea"/>
+                                            <constraint firstAttribute="width" constant="32" id="oQn-uc-EQb"/>
+                                            <constraint firstAttribute="height" constant="32" id="rh5-3E-PyF"/>
+                                        </constraints>
+                                        <state key="normal" image="whiteCircle.png"/>
+                                        <connections>
+                                            <action selector="whitePaintBrushTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fB3-Km-3jc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swa-vC-oWZ" userLabel="GreyBrush">
+                                        <rect key="frame" x="0.0" y="37" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="7R7-Pi-DKT"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Roc-fX-eYW"/>
+                                            <constraint firstAttribute="width" constant="32" id="id9-ZV-l3I"/>
+                                        </constraints>
+                                        <state key="normal" image="greyCircle.png"/>
+                                        <connections>
+                                            <action selector="greyPaintBrushTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T5R-HV-Yiz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VZ-km-OQP" userLabel="BlackBrush">
+                                        <rect key="frame" x="0.0" y="74" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="JmQ-UX-cWM"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="QBu-si-OJP"/>
+                                            <constraint firstAttribute="width" constant="32" id="gPk-Qe-bsH"/>
+                                        </constraints>
+                                        <state key="normal" image="blackCircle.png"/>
+                                        <connections>
+                                            <action selector="blackPaintBrushTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8DN-Ml-ist"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gre-VB-58e" userLabel="OrangeBrush">
+                                        <rect key="frame" x="0.0" y="111" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="IH9-Gh-Rzj"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="WTb-NB-fvI"/>
+                                            <constraint firstAttribute="height" constant="32" id="hx3-wM-oRU"/>
+                                        </constraints>
+                                        <state key="normal" image="orangeCircle.png"/>
+                                        <connections>
+                                            <action selector="orangePaintBrushTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Bj-bc-tcc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bi-k1-cG3" userLabel="GreenBrush">
+                                        <rect key="frame" x="0.0" y="148" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="9d4-qM-JDs"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="CWa-Nl-wxf"/>
+                                            <constraint firstAttribute="width" constant="32" id="yNe-0u-viJ"/>
+                                        </constraints>
+                                        <state key="normal" image="greenCircle.png"/>
+                                        <connections>
+                                            <action selector="greenPaintBrushTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vI9-0W-8Ci"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVF-Jf-tWr" userLabel="BlueBrush">
+                                        <rect key="frame" x="0.0" y="185" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="7MG-j7-oEI"/>
+                                            <constraint firstAttribute="width" constant="32" id="OWH-76-dT9"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="QdW-yQ-ykO"/>
+                                        </constraints>
+                                        <state key="normal" image="blueCircle.png"/>
+                                        <connections>
+                                            <action selector="bluePaintBrushTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ou4-Es-cI6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avl-Ff-0Ga" userLabel="Separator">
+                                        <rect key="frame" x="0.0" y="222" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="7Q1-qx-12J"/>
+                                            <constraint firstAttribute="height" constant="32" id="jYh-qz-ivi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuJ-Qo-LHj" userLabel="Eraser">
+                                        <rect key="frame" x="0.0" y="259" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="2sx-zc-GBU"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="K8r-9w-Nbv"/>
+                                            <constraint firstAttribute="height" constant="32" id="qNZ-AK-Omd"/>
+                                        </constraints>
+                                        <state key="normal" image="eraserCircle.png"/>
+                                        <connections>
+                                            <action selector="eraseBrushTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGQ-4f-I7i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUt-CH-f7L" userLabel="Clear">
+                                        <rect key="frame" x="0.0" y="296" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="2BD-QU-2dA"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="VOx-2R-mXJ"/>
+                                            <constraint firstAttribute="width" constant="32" id="c3A-wF-DGg"/>
+                                        </constraints>
+                                        <state key="normal" image="trashCircle.png"/>
+                                        <connections>
+                                            <action selector="deleteDrawing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1m4-mc-8mj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.029999999999999999" minValue="0.0050000000000000001" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="aPf-lR-tc9" userLabel="BrushSize">
+                                <rect key="frame" x="67" y="25" width="283" height="31"/>
+                                <color key="tintColor" red="0.68479870887214278" green="0.68210906611210187" blue="0.70179276239304311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="brushSizeSlider:" destination="BYZ-38-t0r" eventType="touchDragInside" id="cK8-Rz-x8D"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHO-3n-V9t">
+                                <rect key="frame" x="5" y="10" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1wP-h5-og4"/>
+                                    <constraint firstAttribute="width" constant="60" id="seu-yg-rWF"/>
+                                </constraints>
+                                <state key="normal" image="SwitchCamera"/>
+                                <connections>
+                                    <action selector="switchCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMh-Ko-YeJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfB-8H-jIn">
+                                <rect key="frame" x="147.5" y="567" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Dnx-yT-bvp"/>
+                                    <constraint firstAttribute="width" constant="80" id="xMT-x1-W6F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <state key="normal" title="◉">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeScreenshot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogr-kq-6Jp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HMn-I2-vST" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8LV-fK-stR"/>
+                            <constraint firstItem="KHO-3n-V9t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="Pkx-Is-43i"/>
+                            <constraint firstItem="HMn-I2-vST" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="XnI-3B-tuy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LfB-8H-jIn" secondAttribute="bottom" constant="20" id="a3q-jx-Rgb"/>
+                            <constraint firstItem="aPf-lR-tc9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="dOM-Xh-uaj"/>
+                            <constraint firstItem="KHO-3n-V9t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="gyo-iC-8Pw"/>
+                            <constraint firstItem="aPf-lR-tc9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="h39-ux-UZ2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aPf-lR-tc9" secondAttribute="trailing" constant="11" id="klL-G0-5sW"/>
+                            <constraint firstItem="LfB-8H-jIn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oqg-55-JE6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brushSizeSlider" destination="aPf-lR-tc9" id="l9F-IT-Ubs"/>
+                        <outlet property="buttonStack" destination="HMn-I2-vST" id="8Su-qy-1zh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.34375" y="-150.21961932650072"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SwitchCamera" width="31" height="26"/>
+        <image name="blackCircle.png" width="400" height="400"/>
+        <image name="blueCircle.png" width="400" height="400"/>
+        <image name="eraserCircle.png" width="400" height="400"/>
+        <image name="greenCircle.png" width="400" height="400"/>
+        <image name="greyCircle.png" width="400" height="400"/>
+        <image name="orangeCircle.png" width="400" height="400"/>
+        <image name="trashCircle.png" width="400" height="400"/>
+        <image name="whiteCircle.png" width="400" height="400"/>
+    </resources>
+</document>
